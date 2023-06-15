@@ -1,0 +1,7 @@
+@import "./shared/styles/variables";
+
+.app__wrapper {
+  background-color: var(--app-background-color);
+  color: var(--primary-text-color);
+  font-family: "Inter", sans-serif;
+}
