@@ -9,6 +9,7 @@ import { SigninComponent } from './components/auth/signin/signin.component';
 import { SignupComponent } from './components/auth/signup/signup.component';
 import { WriteComponent } from './components/author/write/write.component';
 import { MyContentComponent } from './components/author/my-content/my-content.component';
+import { PostComponent } from './components/post/post.component';
 
 @NgModule({
   declarations: [
@@ -18,13 +19,11 @@ import { MyContentComponent } from './components/author/my-content/my-content.co
     SigninComponent,
     SignupComponent,
     WriteComponent,
-    MyContentComponent
+    MyContentComponent,
+    PostComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

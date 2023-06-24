@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import postsMock from './posts.mock';
 
 @Component({
   selector: 'app-browse',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./browse.component.scss'],
 })
 export class BrowseComponent {
-  private async getPosts() {}
+  posts = postsMock();
 }

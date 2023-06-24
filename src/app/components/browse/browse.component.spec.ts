@@ -8,7 +8,7 @@ describe('BrowseComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [BrowseComponent]
+      declarations: [BrowseComponent],
     });
     fixture = TestBed.createComponent(BrowseComponent);
     component = fixture.componentInstance;
