@@ -10,6 +10,10 @@
 .topbar__title {
   font-size: max(1.4vw, 1.5rem) !important;
   font-weight: 700;
+
+  :hover {
+    cursor: pointer;
+  }
 }
 
 .topbar__offline__options {

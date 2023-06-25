@@ -1,1 +1,44 @@
-<p>signup works!</p>
+<form action="" [formGroup]="signUpData">
+  <label for="firstName">
+    <input
+      type="text"
+      required
+      placeholder="First name"
+      formControlName="firstName" />
+  </label>
+
+  <label for="lastName">
+    <input
+      type="text"
+      required
+      placeholder="Last name"
+      formControlName="lastName" />
+  </label>
+
+  <label for="email">
+    <input type="email" required placeholder="E-mail" formControlName="email" />
+  </label>
+
+  <label for="password">
+    <input
+      type="password"
+      required
+      placeholder="Password"
+      formControlName="password" />
+  </label>
+
+  <div>
+    <span>Já tem uma conta? <a routerLink="/auth/signin">Faça o login</a></span>
+
+    <button
+      [disabled]="
+        !signUpData.value.firstName ||
+        !signUpData.value.lastName ||
+        !signUpData.value.email ||
+        !signUpData.value.password
+      "
+      (click)="signUp()">
+      Criar conta
+    </button>
+  </div>
+</form>

@@ -1,1 +1,25 @@
-<p>signin works!</p>
+<form action="" [formGroup]="signInData">
+  <label for="email">
+    <input formControlName="email" type="email" required placeholder="E-mail" />
+  </label>
+
+  <label for="password">
+    <input
+      formControlName="password"
+      type="password"
+      required
+      placeholder="Password" />
+  </label>
+
+  <div>
+    <span
+      >Não tem uma conta? <a routerLink="/auth/signup">Cadastre-se</a>
+    </span>
+
+    <button
+      [disabled]="!signInData.value.email || !signInData.value.password"
+      (click)="signIn()">
+      Login
+    </button>
+  </div>
+</form>

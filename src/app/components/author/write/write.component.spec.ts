@@ -2,7 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { WriteComponent } from './write.component';
 
-describe('WriteComponent', () => {
+describe('MarkdownEditorComponent', () => {
   let component: WriteComponent;
   let fixture: ComponentFixture<WriteComponent>;
 

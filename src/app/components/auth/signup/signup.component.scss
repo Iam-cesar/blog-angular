@@ -1,0 +1,55 @@
+form {
+  padding: 1rem;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  width: 100%;
+}
+
+input {
+  background-color: #010409;
+  border: 1px solid #30363d;
+  border-radius: 0.25rem;
+  color: var(--primary-text-color);
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: max(1vw, 1.25rem);
+  margin-bottom: 1rem;
+  outline: none;
+  padding: 0.5rem;
+
+  ::placeholder {
+    color: var(--secondary-text-color);
+  }
+
+  &:focus {
+    border: 1px solid var(--app-primary-color);
+  }
+}
+
+div {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+div span a {
+  color: var(--app-primary-color);
+}
+
+div button {
+  background-color: var(--app-primary-color);
+  padding: 0.5rem 1.25rem;
+  font-size: 1rem;
+
+  &:disabled {
+    background-color: var(--component-background-color);
+  }
+}

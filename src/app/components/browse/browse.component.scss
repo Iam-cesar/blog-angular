@@ -1,15 +1,9 @@
-.browse__post__container {
-  max-width: 1440px;
-  min-width: 320px;
-  margin: 0 auto;
-  padding-bottom: 1rem;
-}
-
 ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   gap: 0.5rem;
+  list-style: none;
+  margin: 0 auto;
 }
 
 ul li {
@@ -26,7 +20,7 @@ ul li:hover {
 ul li h2 {
   align-items: center;
   display: flex;
-  font-family: "Inter";
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 600;
   font-size: max(1vw, 1rem);
@@ -46,12 +40,8 @@ ul li .browse__post__list__info {
   }
 }
 
-@media screen and (min-width: 1024px) {
-  ul {
-    flex-wrap: wrap;
-  }
-
-  ul li {
-    width: 40%;
-  }
+.browse__no__content {
+  display: grid;
+  height: 80vh;
+  place-items: center;
 }

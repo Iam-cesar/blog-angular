@@ -1,1 +1,23 @@
-<p>write works!</p>
+<form [formGroup]="formData" (submit)="createPost()">
+  <label for="title">
+    <div>
+      <h1>Publicar novo conteúdo</h1>
+      <button
+        [type]="'submit'"
+        [disabled]="
+          !formData.value.title ||
+          !formData.value.content ||
+          formData.value.content === '<p></p>'
+        ">
+        Publicar
+      </button>
+    </div>
+
+    <input required formControlName="title" type="text" name="" id="title" />
+  </label>
+
+  <div class="NgxEditor__Wrapper">
+    <ngx-editor-menu [editor]="editor" [toolbar]="toolbar" />
+    <ngx-editor required [editor]="editor" formControlName="content" />
+  </div>
+</form>

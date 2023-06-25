@@ -1,0 +1,123 @@
+form {
+  padding: 1rem;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  width: 100%;
+
+  div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    max-height: 2rem;
+  }
+
+  div h1 {
+    align-items: center;
+    display: flex;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: max(1vw, 2rem);
+    line-height: 150%;
+  }
+
+  div button {
+    background-color: var(--success-color);
+    padding: 0 1rem;
+    font-size: 0.875rem;
+
+    &:disabled {
+      background-color: var(--component-background-color);
+    }
+  }
+
+  input {
+    background-color: #010409;
+    border: 1px solid #30363d;
+    border-radius: 0.25rem;
+    color: var(--primary-text-color);
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: max(1vw, 1.25rem);
+    margin-bottom: 1rem;
+    outline: none;
+    padding: 0.5rem;
+
+    ::placeholder {
+      color: var(--secondary-text-color);
+    }
+
+    &:focus {
+      border: 1px solid var(--app-primary-color);
+    }
+  }
+}
+
+.NgxEditor__Wrapper {
+  border: 1px solid #30363d !important;
+
+  &:focus-within {
+    border: 1px solid var(--app-primary-color) !important;
+  }
+}
+
+.NgxEditor__MenuBar {
+  background-color: var(--editor-toolbar-background-color) !important;
+}
+
+.NgxEditor__MenuItem--Active,
+.NgxEditor__Dropdown--DropdownMenu,
+.NgxEditor__Dropdown--Item,
+.NgxEditor__Dropdown--Text,
+.NgxEditor__Popup,
+.NgxEditor__MenuItem--IconContainer:is(
+    :hover,
+    :active,
+    :focus,
+    :focus-visible,
+    :focus-within,
+    ::-moz-focus-outer :visited,
+    :target
+  ) {
+  color: var(--primary-text-color);
+  background-color: var(--editor-toolbar-background-color) !important;
+  cursor: pointer;
+
+  input {
+    background-color: var(--editor-background-color);
+    border: 1px solid var(--editor-toolbar-background-color);
+    border-radius: 0.25rem;
+  }
+
+  button {
+    background: var(--editor-background-color);
+    color: var(--primary-text-color);
+    padding: 0.5rem;
+  }
+}
+
+.NgxEditor {
+  background-color: var(--editor-background-color) !important;
+  border-radius: 0.25rem;
+  height: 70vh;
+
+  * {
+    color: var(--primary-text-color);
+    font: none;
+    font-size: none;
+  }
+}
+
+.NgxEditor__Content {
+  height: 100%;
+  margin: 0 auto;
+  padding-top: 1rem !important;
+  width: 80%;
+}

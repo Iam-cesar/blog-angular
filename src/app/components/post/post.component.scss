@@ -1,0 +1,26 @@
+section {
+  padding: 2rem;
+}
+
+h1 {
+  align-items: center;
+  display: flex;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: max(1.402vw, 2rem);
+  line-height: 150%;
+  margin-bottom: 1rem;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  font-size: max(1vw, 1.125rem);
+  gap: 1rem;
+  line-height: 150%;
+
+
+}
+
+

@@ -1,12 +1,18 @@
-<section class="browse__post__container">
-  <ul>
+<section>
+  <ul *ngIf="posts.length > 0; else withoutPosts">
     <li *ngFor="let post of posts" routerLink="/post/{{ post.id }}">
       <h2>{{ post.title }}</h2>
 
       <div class="browse__post__list__info">
         <span>{{ post.createdAt }}</span>
-        <span>{{ post.author }}</span>
+        <span>{{ post.author.firstName }} {{ post.author.lastName }}</span>
       </div>
     </li>
   </ul>
 </section>
+
+<ng-template #withoutPosts>
+  <div class="browse__no__content">
+    <h1>Ainda não a posts cadastrados.</h1>
+  </div>
+</ng-template>

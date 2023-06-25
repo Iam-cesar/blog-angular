@@ -88,11 +88,9 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
+
 article,
 aside,
 details,
@@ -109,10 +107,6 @@ section {
 body {
   line-height: 1;
 }
-ol,
-ul {
-  list-style: none;
-}
 blockquote,
 q {
   quotes: none;
@@ -121,7 +115,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: "";
+  content: '';
   content: none;
 }
 table {
@@ -133,10 +127,26 @@ table {
   button {
     transition: all 100ms ease-in-out;
     opacity: 0.8;
-  }
 
-  button:hover {
-    opacity: 1;
-    cursor: pointer;
+    align-items: center;
+    border-radius: 0.25rem;
+    border: none;
+    color: var(--primary-text-color);
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 150%;
+
+    &:hover {
+      opacity: 1;
+      cursor: pointer;
+    }
   }
+}
+
+section {
+  max-width: 1440px;
+  min-width: 320px;
+  margin: 0 auto;
 }
