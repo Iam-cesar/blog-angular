@@ -107,6 +107,7 @@ label {
   background-color: var(--editor-background-color) !important;
   border-radius: 0.25rem;
   height: 70vh;
+  overflow-y: scroll;
 
   * {
     color: var(--primary-text-color);
@@ -119,5 +120,6 @@ label {
   height: 100%;
   margin: 0 auto;
   padding-top: 1rem !important;
+  overflow-y: scroll;
   width: 80%;
 }
